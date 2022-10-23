@@ -1,8 +1,8 @@
 import React from "react";
-import BackgoundUser from "../../layout/ProfileBack/BackgoundUser";
-import ProfileTitle from "../../components/profile/ProfileTitle";
+import BackgoundUser from "../../layouts/ProfileBack/BackgoundUser";
+import ProfileTitle from "../../components/profile/profile[id]/ProfileTitle";
 import {Container, Grid} from "@mui/material";
-import MyTrello from "../../components/profile/MyTrello";
+import MyTrello from "../../components/profile/mynotes/MyTrello";
 
 const MyNotes = () => {
     return(

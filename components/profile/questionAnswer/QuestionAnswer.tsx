@@ -10,7 +10,7 @@ const TabL = styled(TabUnstyled)`
   font-family: Verdana;
   color: #FFFFFF;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   background-color: transparent;
   width: 100%;
@@ -32,7 +32,7 @@ const TabR = styled(TabUnstyled)`
   font-family: Verdana;
   color: #FFFFFF;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   background-color: transparent;
   width: 100%;

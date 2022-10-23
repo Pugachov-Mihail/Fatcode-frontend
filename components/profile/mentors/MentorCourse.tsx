@@ -21,7 +21,7 @@ const MentorCourse = ({list}: PropsList) => {
             </Typography>
             {
                 list.map(item=>(
-                   <ListItem >
+                   <ListItem key={item.key}>
                        <Typography sx={{
                            color: "#BBC0CB",
                            fontSize: 20,

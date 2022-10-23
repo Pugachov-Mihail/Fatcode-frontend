@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, {useState} from "react";
 import {Avatar, ImageList, ImageListItem, Typography} from "@mui/material";
 import Box from "@mui/material/Box";
-import {PropsChildren} from "../../type/PropsChildren";
+import {PropsChildren} from "../../../type/PropsChildren";
 
 
 

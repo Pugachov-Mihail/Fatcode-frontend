@@ -9,7 +9,7 @@ const HeaderLinks: React.FC<LinkProps> = ({links})=>{
         <Box sx={{
           display: 'flex',
           alignItems: 'center',
-          columnGap: 6,
+          columnGap: 5,
           whiteSpace: 'nowrap',
           '& > a:hover': {color: '#69CB2D', transition: '.5s'}
         }}>

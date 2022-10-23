@@ -1,5 +1,5 @@
 import React from "react";
-import {Container, Box} from "@mui/material";
+import {Container} from "@mui/material";
 import TextLeftMenu from "./TextLeftMenu";
 import Image from "next/image";
 import Grid from "@mui/material/Grid";
@@ -19,18 +19,18 @@ const LeftMenu = () => {
 
     if (pets){
     return(<>
-        <Box sx={{
+        <Container sx={{
             background: "#69CB2D",
             borderBottomLeftRadius: 20,
             borderBottomRightRadius: 20,
             paddingTop: 5,
-            paddingBottom: 2,
+            paddingBottom: 2
         }}>
             <TextLeftMenu list={list}/>
-        </Box>
+        </Container>
         </>
     )}else {return(<>
-            <Box sx={{
+            <Container sx={{
                 background: "#69CB2D",
                 borderBottomLeftRadius: 20,
                 borderBottomRightRadius: 20,
@@ -38,7 +38,7 @@ const LeftMenu = () => {
                 paddingBottom: 2
             }}>
                 <TextLeftMenu list={list}/>
-            </Box>
+            </Container>
             <Grid>
                 <Image src={"/assets/image/svg/Laps.svg"} width={200} height={200} />
             </Grid>

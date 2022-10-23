@@ -1,10 +1,10 @@
 import React from "react";
 import {Avatar, Grid, Typography} from "@mui/material";
-import BackgoundUser from "../../layout/ProfileBack/BackgoundUser";
-import UserInformation from "../../components/profile/UserInformation";
-import Pencil from "../../components/profile/Pencil";
-import UserAvatar from "../../components/profile/UserAvatar";
-import ProfileTitle from "../../components/profile/ProfileTitle";
+import BackgoundUser from "../../layouts/ProfileBack/BackgoundUser";
+import UserInformation from "../../components/profile/profile[id]/UserInformation";
+import Pencil from "../../components/profile/profile[id]/Pencil";
+import UserAvatar from "../../components/profile/profile[id]/UserAvatar";
+import ProfileTitle from "../../components/profile/profile[id]/ProfileTitle";
 
 
 const User = () => {

@@ -5,6 +5,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { Typography, List, ListItem, ButtonBase } from '@mui/material';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import {useRouter} from "next/router";
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -35,6 +36,7 @@ const cardsObj = [
 const buttonsList = ["Frontend", "Backend", "Тестирование", "Кибербезопастность", "Другое",];
 
 export default function CardsCourse() {
+  const router = useRouter()
   return (
     <Box sx={{ flexGrow: 1 }} m={3}>
     
@@ -43,6 +45,7 @@ export default function CardsCourse() {
         <Box 
         sx={{
           display: 'flex',
+          flexWrap: 'wrap',
           columnGap: 2,
           justifyContent: 'center',
         }}>
@@ -50,6 +53,7 @@ export default function CardsCourse() {
             <ButtonBase key={button} 
               sx={{
                borderRadius: 40,
+               my: 1,
                paddingX: 4,
                paddingY: 1, 
                backgroundColor: '#1C1D1E', 
@@ -65,7 +69,7 @@ export default function CardsCourse() {
       {/* Вывод всех курсов */}
       <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 2, sm: 8, md: 12 }}>
         {cardsObj.map((el) => (
-          <Grid item xs={2} sm={4} md={4} key={el.id}
+          <Grid onClick={()=>router.push("/courses/1")} item xs={2} sm={4} md={4} key={el.id}
           sx={{maxHeight: 356}}>
             <Item>
 

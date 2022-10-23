@@ -1,9 +1,16 @@
 import React from "react";
 import {Avatar, Container, Grid, ListItem, Typography} from "@mui/material";
 
+type PropsMentor = {
+    mentor: List[]
+}
 
+type List = {
+    key: number,
+    text: string
+}
 
-const MentorsListItem = ({mentor}) => {
+const MentorsListItem: React.FC<PropsMentor> = ({mentor}) => {
 
   return(
         <>

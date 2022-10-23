@@ -1,8 +1,8 @@
 import React from "react";
-import BackgoundUser from "../../layout/ProfileBack/BackgoundUser";
-import ProfileTitle from "../../components/profile/ProfileTitle";
+import BackgoundUser from "../../layouts/ProfileBack/BackgoundUser";
+import ProfileTitle from "../../components/profile/profile[id]/ProfileTitle";
 import {Container, Grid} from "@mui/material";
-import QuestionAnswer from "../../components/profile/QuestionAnswer";
+import QuestionAnswer from "../../components/profile/questionAnswer/QuestionAnswer";
 
 const Question = () => {
     return(

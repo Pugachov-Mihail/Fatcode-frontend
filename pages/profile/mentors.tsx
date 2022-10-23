@@ -1,6 +1,6 @@
 import React, { useState} from "react";
-import BackgoundUser from "../../layout/ProfileBack/BackgoundUser";
-import ProfileTitle from "../../components/profile/ProfileTitle";
+import BackgoundUser from "../../layouts/ProfileBack/BackgoundUser";
+import ProfileTitle from "../../components/profile/profile[id]/ProfileTitle";
 import { Button, Grid, Typography} from "@mui/material";
 import MentorsList from "../../components/profile/mentors/mentorsList";
 import MentorCourse from "../../components/profile/mentors/MentorCourse";

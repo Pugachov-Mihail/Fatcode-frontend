@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Typography } from "@mui/material";
+import {Grid, Typography} from "@mui/material";
 import Link from "next/link";
 
 type LeftMenu = {
@@ -13,21 +13,19 @@ type List = {
 }
 
 //Навесить линки на переходы по страницам
-const TextLeftMenu: React.FC<LeftMenu> = ({ list }) => {
+const TextLeftMenu: React.FC<LeftMenu> = ({list}) => {
     return (
         <>
             {
-                list.map(item => (
+                list.map(item=>(
                     <Grid>
                         <Typography key={item.key} sx={{
                             color: "white",
                             fontSize: 25,
                             fontWeight: "bold",
-                            paddingX: 4,
-                            paddingY: 1,
                             "&:hover": {
                                 background: "white",
-                                color: "#69CB2D",
+                                color: "#69CB2D"
                             }
                         }}>
                             <Link href={item.href}>{item.text}</Link>
